@@ -1,5 +1,7 @@
 # Pyrogram bot to automate streaming music in voice chats
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/InukaAsith/VoiceChatPyroBot.git)
+
 ## Help
 If you face an error, want to discuss this project or get support for it, join [@su_Chats](https://t.me/su_Chats) on Telegram.
 
