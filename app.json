@@ -1,0 +1,74 @@
+{
+  "name": "Forcesub",
+  "description": "This is a telegram bot writen in python for managing group/channel.",
+  "repository": "https://github.com/sakhaavvaavaj93/VoiceChatPyroBot",
+  "success_url": "https://github.com/sakhaavvaavaj93/VoiceChatPyroBot",
+  "website": "https://github.com/sakhaavvaavaj93/VoiceChatPyroBot",
+   "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": [
+        "version": "10"
+        ]
+      },
+  ],
+  
+  "buildpacks": [
+    {
+    "url": "https://github.com/heroku/heroku-buildpack-python",
+  "formation": 
+    "worker": {
+      "quantity": 1,
+      "size": "free",
+    }
+  }
+],
+
+  "env": [
+    {
+      "description": "Setting this to ANYTHING will enable env variables",
+      
+      "value": "ANYTHING"
+    }
+    "TOKEN": {
+      "description": "Your bot token, as a string.",
+      "required": true,
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Your telegram app ID (get it from my.telegram.org)",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your telegram api hash (get it from my.telegram.org)",
+      "required": true,
+      "value": ""
+    },
+  
+    "SUDO_USERS": {
+      "description": "Keep this empty if you don't have a database",
+      "required": false,
+      "value": ""
+    },
+    
+     "LOG_GROUP ": {
+      "description": "log group",
+      "required": false,
+      "value": ""
+    },
+  
+    "LANG": {
+      "description": "log group",
+      "required": false,
+      "value": ""
+    },
+  
+    "DUR_LIMIT ": {
+      "description": "int: max video duration in minutes for downloads",
+      "required": false,
+      "value": ""
+    },
+  ]
+}
+  
